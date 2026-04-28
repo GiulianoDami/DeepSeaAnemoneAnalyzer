@@ -1,0 +1,37 @@
+{
+    "language": "Python",
+    "dependency_file": "requirements.txt",
+    "dependencies": ["scikit-learn", "numpy", "pandas", "matplotlib"],
+    "files": [
+        {
+            "path": "src/deepsea_analyzer.py",
+            "description": "Main analyzer class for processing deep-sea samples",
+            "exports": ["class DeepSeaAnalyzer", "def analyze_sample(data)"]
+        },
+        {
+            "path": "src/spectral_processor.py",
+            "description": "Handles spectral signature analysis",
+            "exports": ["class SpectralProcessor", "def compare_spectra(sig1, sig2)"]
+        },
+        {
+            "path": "src/morphology_processor.py",
+            "description": "Processes morphological features using pattern recognition",
+            "exports": ["class MorphologyProcessor", "def extract_features(morph_data)"]
+        },
+        {
+            "path": "src/model_loader.py",
+            "description": "Loads pre-trained ML models for classification",
+            "exports": ["class ModelLoader", "def load_classifier()"]
+        },
+        {
+            "path": "src/data_utils.py",
+            "description": "Utility functions for handling input data and depth ranges",
+            "exports": ["def validate_input(data)", "def adjust_probability_by_depth(prob, depth)"]
+        },
+        {
+            "path": "src/__init__.py",
+            "description": "Package initializer to expose core functionality",
+            "exports": ["class DeepSeaAnalyzer", "function analyze_sample"]
+        }
+    ]
+}
